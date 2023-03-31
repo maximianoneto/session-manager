@@ -13,13 +13,13 @@
 	<li>Abra o XAMPP e inicie os serviços de Apache e MySQL.</li>
     <li>Abra o navegador e acesse http://localhost/phpmyadmin/. Clique em "Novo" e crie um banco de dados com o nome "session_manager".</li>
     <li>Execute o comando <code>mvn clean install</code> para instalar as dependências do projeto.</li>
-    <li>Execute o comando <code>mvn spring-boot:run</code> para iniciar a aplicação.</li>
     <li>Acesse o site oficial do RabbitMQ em https://www.rabbitmq.com/download.html e baixe a versão adequada para o seu sistema operacional.</li>
     <li>Instale o RabbitMQ de acordo com as instruções específicas do seu sistema operacional.</li>
     <li> Execute o seguinte comando para verificar se o RabbitMQ está instalado corretamente: </li>
     <li> sc query RabbitMQ </li>
     <li> Caso o serviço não esteja em execução, você pode iniciar o serviço do RabbitMQ usando o seguinte comando: </li>
     <li> net start RabbitMQ </li>
+    <li>Execute o comando <code>mvn spring-boot:run</code> para iniciar a aplicação.</li>
     <li>A aplicação deve iniciar e estará disponível em http://localhost:8080/api/pautas</li>
 </ol>
 
