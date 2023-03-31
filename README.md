@@ -123,11 +123,11 @@ Utilização de testes unitários e integrados: o projeto utiliza testes unitár
 	"voto": true,
 	"pauta": {
 		"id": 31,
-		"descricao": "Pauta30",
-                "titulo":"Elevação de Status",
+		"descricao": "Lorem ipsum",
+                "titulo":"Ajuste na contabilidade",
                 "sessaoAberta":true,
                 "duracaoSessao":"PT1M",
-                "dataHoraInicioSessao":"2023-03-30T15:01:26"},
+                "dataHoraInicioSessao":"2023-03-31T15:01:26.8167335"},
         "cpf":6258951422
     }
 </code>
