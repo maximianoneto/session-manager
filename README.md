@@ -6,7 +6,7 @@
 
 <ol>
     <li>Clone este repositório em sua máquina:</li>
-    <li>git clone https://https://github.com/maximianoneto/session-manager.git</li>
+    <li>git clone https://github.com/maximianoneto/session-manager.git</li>
     <li>Certifique-se de ter o Java 11 e o Maven instalados em sua máquina.</li>
     <li>Utilize o usuário e senha do banco de dados no arquivo <code>src/main/resources/application.properties</code>.</li>
 	<li>Baixe e instale o XAMPP, que será utilizado para conectar a aplicação ao banco de dados local. Você pode baixá-lo em https://www.apachefriends.org/pt_br/index.html.</li>
