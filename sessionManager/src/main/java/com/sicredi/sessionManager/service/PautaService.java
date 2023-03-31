@@ -19,9 +19,6 @@ public class PautaService {
     }
 
     public PautaEntity abrirSessao(Long pautaId, Duration duracao) {
-        if(pautaId == null || duracao == null) {
-            throw new IllegalArgumentException("PautaId e duração são obrigatórios");
-        }
         PautaEntity pauta = pautaRepository.findById(pautaId).orElseThrow(() -> new ResourceNotFoundException("Pauta não encontrada. PautaId: " + pautaId));
         pauta.setSessaoAberta(true);
         pauta.setDuracaoSessao(duracao);
