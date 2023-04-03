@@ -42,9 +42,9 @@ public class VotoService {
                 .orElseThrow(() -> new ResourceNotFoundException("Pauta não encontrada. PautaId: " + pautaId));
         logger.info("Pauta encontrada. PautaId: {}", pautaId);
 
-        Long cpf = Long.valueOf(CPFGenerator.gerarCpfValido());
+        String cpf = CPFGenerator.gerarCpfValido();
 
-        String cpfFormatado = formatarCpf(String.valueOf(cpf));
+        String cpfFormatado = formatarCpf(cpf);
 
         String url = "https://cpf-validator-nextjs.vercel.app/api/cpf";
         RestTemplate restTemplate = new RestTemplate();
@@ -72,7 +72,7 @@ public class VotoService {
             if (!sessaoEncerrada && !votoRepository.existsByPautaIdAndIdAssociado(pautaId, voto.getIdAssociado())) {
                 voto.setIdAssociado(voto.getIdAssociado());
                 voto.setPauta(pauta);
-                voto.setCpf(cpf);
+                voto.setCpf(CPFGenerator.desformatarCPF(cpfFormatado));
                 logger.info("Voto registrado com sucesso. PautaId: {}, VotoId: {}", pautaId, voto.getIdAssociado());
                 return ResponseEntity.ok(votoRepository.save(voto));
             } else {

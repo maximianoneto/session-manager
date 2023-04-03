@@ -15,6 +15,7 @@ public class PautaService {
     private  PautaRepository pautaRepository;
 
     public PautaEntity criarPauta(PautaEntity pauta) {
+        pauta.setDataHoraInicioSessao(null);
         return pautaRepository.save(pauta);
     }
 
