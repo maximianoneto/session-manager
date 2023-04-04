@@ -29,14 +29,10 @@ public class PautaEntity {
     @ApiModelProperty(hidden = true)
     @Column(name = "duracao_sessao")
     private Duration duracaoSessao;
+
     @ApiModelProperty(hidden = true)
     @Column(name = "data_hora_inicio_sessao")
     private LocalDateTime dataHoraInicioSessao;
 
-    @PrePersist
-    public void prePersist() {
-        ZoneId fusoBrasilia = ZoneId.of("America/Sao_Paulo");
-        LocalDateTime agoraEmBrasilia = LocalDateTime.now(fusoBrasilia);
-        setDataHoraInicioSessao(agoraEmBrasilia);
-    }
+
 }

@@ -30,7 +30,7 @@ public class VotoEntity {
 
         @ApiModelProperty(hidden = true)
         @Column(name = "cpf")
-        private Long cpf;
+        private String cpf;
 }
 
 

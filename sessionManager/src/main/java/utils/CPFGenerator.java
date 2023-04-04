@@ -33,4 +33,9 @@ public class CPFGenerator {
         String cpfFormatado = formatador.format(Long.parseLong(cpf));
         return cpfFormatado.replaceFirst("(\\d{3})(\\d{3})(\\d{3})", "$1.$2.$3-");
     }
+
+    public static String desformatarCPF(String cpfFormatado) {
+        String cpfDesformatado = cpfFormatado.replaceAll("[^0-9]", "");
+        return cpfDesformatado;
+    }
 }
