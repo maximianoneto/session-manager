@@ -20,7 +20,7 @@
     <li> Caso o serviço não esteja em execução, você pode iniciar o serviço do RabbitMQ usando o seguinte comando: </li>
     <li> net start RabbitMQ </li>
     <li>Execute o comando <code>mvn spring-boot:run</code> para iniciar a aplicação.</li>
-    <li>A aplicação deve iniciar e estará disponível em http://localhost:8080/api/pautas</li>
+    <li>A aplicação deve iniciar e estará disponível em http://localhost:8080/swagger-ui.html</li>
 </ol>
 
 <h2> Explicação das Escolhas Tomadas durante o processo de Desenvolvimento da Solução </h2>
