@@ -7,18 +7,13 @@
 <ol>
     <li>Clone este repositório em sua máquina:</li>
     <li>git clone https://github.com/maximianoneto/session-manager.git</li>
-    <li>Certifique-se de ter o Java 11 e o Maven instalados em sua máquina.</li>
+    <li>Certifique-se de ter o Java 11, Maven o RabbitMQ instalados em sua máquina.</li>
     <li>Utilize o usuário e senha do banco de dados no arquivo <code>src/main/resources/application.properties</code>.</li>
 	<li>Baixe e instale o XAMPP, que será utilizado para conectar a aplicação ao banco de dados local. Você pode baixá-lo em https://www.apachefriends.org/pt_br/index.html.</li>
 	<li>Abra o XAMPP e inicie os serviços de Apache e MySQL.</li>
     <li>Abra o navegador e acesse http://localhost/phpmyadmin/. Clique em "Novo" e crie um banco de dados com o nome "session_manager".</li>
     <li>Execute o comando <code>mvn clean install</code> para instalar as dependências do projeto.</li>
-    <li>Acesse o site oficial do RabbitMQ em https://www.rabbitmq.com/download.html e baixe a versão adequada para o seu sistema operacional.</li>
-    <li>Instale o RabbitMQ de acordo com as instruções específicas do seu sistema operacional.</li>
-    <li> Execute o seguinte comando para verificar se o RabbitMQ está instalado corretamente: </li>
-    <li> sc query RabbitMQ </li>
-    <li> Caso o serviço não esteja em execução, você pode iniciar o serviço do RabbitMQ usando o seguinte comando: </li>
-    <li> net start RabbitMQ </li>
+    <li>Instale  e as configurações padrões seram recebidas apartir do properties da aplicação.</li>
     <li>Execute o comando <code>mvn spring-boot:run</code> para iniciar a aplicação.</li>
     <li>A aplicação deve iniciar e estará disponível em http://localhost:8080/swagger-ui.html</li>
 </ol>
@@ -48,21 +43,12 @@ Utilização de testes unitários e integrados: o projeto utiliza testes unitár
 <ul>
 	<li>spring-boot-starter-data-jpa</li>
 	<li>spring-boot-starter-web</li>
-	<li>spring-boot-starter-webflux</li>
 	<li>spring-boot-starter-amqp</li>
 	<li>mysql-connector-java</li>
 	<li>spring-boot-starter-test</li>
 	<li>spring-security-oauth2-autoconfigure</li>
-	<li>spring-security-oauth2-client</li>
-	<li>spring-security-oauth2-jose</li>
-	<li>httpclient</li>
-	<li>gson</li>
 	<li>lombok</li>
 	<li>commons-lang3</li>
-	<li>jackson-databind</li>
-	<li>junit-jupiter-engine</li>
-	<li>powermock-module-junit4</li>
-	<li>powermock-api-mockito2</li>
 	<li>mockito-junit-jupiter</li>
 </ul>
 
