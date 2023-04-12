@@ -13,7 +13,6 @@
 	<li>Abra o XAMPP e inicie os serviços de Apache e MySQL.</li>
     <li>Abra o navegador e acesse http://localhost/phpmyadmin/. Clique em "Novo" e crie um banco de dados com o nome "session_manager".</li>
     <li>Execute o comando <code>mvn clean install</code> para instalar as dependências do projeto.</li>
-    <li>Instale  e as configurações padrões seram recebidas apartir do properties da aplicação.</li>
     <li>Execute o comando <code>mvn spring-boot:run</code> para iniciar a aplicação.</li>
     <li>A aplicação deve iniciar e estará disponível em http://localhost:8080/swagger-ui.html</li>
 </ol>
